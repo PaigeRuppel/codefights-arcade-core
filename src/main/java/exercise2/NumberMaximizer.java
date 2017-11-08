@@ -9,5 +9,4 @@ public class NumberMaximizer {
 		}
 		return Integer.parseInt(sb.toString());
 	}
-
 }

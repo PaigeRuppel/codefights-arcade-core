@@ -9,7 +9,7 @@ import org.junit.Test;
 public class NumberMaximizerTest {
 
 	private NumberMaximizer underTest;
-	
+
 	@Before
 	public void setup() {
 		underTest = new NumberMaximizer();
@@ -18,5 +18,10 @@ public class NumberMaximizerTest {
 	@Test
 	public void shouldReturn99FromN2TestCase1() {
 		assertThat(underTest.largestNumber(2), is(99));
+	}
+
+	@Test
+	public void shouldReturn9FromN1TestCase2() {
+		assertThat(underTest.largestNumber(1), is(9));
 	}
 }

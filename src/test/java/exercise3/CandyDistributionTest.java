@@ -19,4 +19,9 @@ public class CandyDistributionTest {
 	public void shouldReturn9From3And10TestCase1() {
 		assertThat(underTest.candies(3, 10), is(9));
 	}
+	
+	@Test
+	public void shouldReturn2From1And2TestCase2() {
+		assertThat(underTest.candies(1, 2), is(2));
+	}
 }

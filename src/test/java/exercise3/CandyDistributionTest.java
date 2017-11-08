@@ -24,4 +24,14 @@ public class CandyDistributionTest {
 	public void shouldReturn2From1And2TestCase2() {
 		assertThat(underTest.candies(1, 2), is(2));
 	}
+	
+	@Test
+	public void shouldReturn0WhenLessCandyThanChildrenTestCase3() {
+		assertThat(underTest.candies(10,  5), is(0));
+	}
+	
+	@Test
+	public void shouldReturnUnchangedWhenChildrenEqualCandyTestCase4() {
+		assertThat(underTest.candies(4,4), is(4));
+	}
 }

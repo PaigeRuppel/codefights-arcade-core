@@ -28,4 +28,19 @@ public class DivisorTest {
 		int bound = 7;
 		assertThat(underTest.maxMultiple(divisor, bound), is(6));
 	}
+
+	@Test
+	public void shouldReturn50TestCase3() {
+		int divisor = 10;
+		int bound = 50;
+		assertThat(underTest.maxMultiple(divisor, bound), is(50));
+	}
+
+	@Test
+	public void shouldReturn98TestCase4() {
+		int divisor = 7;
+		int bound = 100;
+		assertThat(underTest.maxMultiple(divisor, bound), is(98));
+	}
+	
 }

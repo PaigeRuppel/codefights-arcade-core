@@ -12,9 +12,7 @@ public class NumberCircle {
 	 */
 
 	public int circleOfNumbers(int n, int firstNumber) {
-		return (n - 1) - firstNumber;
+		return (firstNumber + (n/2)) % n;
 	}
 
-	
-	
 }

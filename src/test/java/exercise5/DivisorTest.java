@@ -17,9 +17,15 @@ public class DivisorTest {
 	
 	@Test
 	public void shouldReturn9TestCase1() {
-		int bound = 10;
 		int divisor = 3;
+		int bound = 10;
 		assertThat(underTest.maxMultiple(divisor, bound), is(9));
 	}
 
+	@Test
+	public void shouldReturn6TestCase2() {
+		int divisor = 2;
+		int bound = 7;
+		assertThat(underTest.maxMultiple(divisor, bound), is(6));
+	}
 }

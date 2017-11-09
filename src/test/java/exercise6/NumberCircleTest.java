@@ -22,4 +22,10 @@ public class NumberCircleTest {
 		assertThat(underTest.circleOfNumbers(n, firstNumber), is(7));
 	}
 	
+	@Test
+	public void shouldReturn2TestCase1() {
+		int n = 10;
+		int firstNumber = 7;
+		assertThat(underTest.circleOfNumbers(n, firstNumber), is(2));
+	}
 }

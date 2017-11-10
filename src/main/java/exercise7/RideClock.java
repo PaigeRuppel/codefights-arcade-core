@@ -3,13 +3,12 @@ package exercise7;
 public class RideClock {
 
 	public int lateRide(int n) {
-		int firstHour = n / 600;
-		n -= firstHour * 600;
-		int secondHour = n / 60;
-		n -= 60 * secondHour;
-		int firstMinute = n / 10;
-		n -= 10 * firstMinute;
-		int secondMinute = n;
+		int hour = n / 60;
+		int minute = n % 60;
+		int firstHour = hour / 10;
+		int secondHour = hour % 10;
+		int firstMinute = minute / 10;
+		int secondMinute = minute % 10;
 		return firstHour + secondHour + firstMinute + secondMinute;
 	}
 

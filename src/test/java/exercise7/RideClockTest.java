@@ -28,4 +28,19 @@ public class RideClockTest {
 		int sumConverted = 14;
 		assertThat(underTest.lateRide(n), is(sumConverted));
 	}
+
+	@Test
+	public void shouldReturn19TestCase3() {
+		int n = 1439;
+		int sumConverted = 19;
+		assertThat(underTest.lateRide(n), is(sumConverted));
+	}
+	
+	@Test
+	public void shouldReturn0TestCase4() {
+		int n = 0;
+		int sumConverted = 0;
+		assertThat(underTest.lateRide(n), is(sumConverted));
+	}
+
 }

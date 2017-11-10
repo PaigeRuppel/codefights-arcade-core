@@ -14,17 +14,16 @@ public class PayPhone {
 	public int phoneCall(int min1, int min2_10, int min11, int s) {
 		int subtract = min1;
 		int currentMin = 0;
-		while (s > 0) {
-			if (currentMin == 2) {
+		while (s >= subtract) {
+			if (currentMin == 1) {
 				subtract = min2_10;
 			}
-			if (currentMin == 11) {
+			if (currentMin == 10) {
 				subtract = min11;
 			}
 			s -= subtract;
 			currentMin++;
 		}
-		
 		return currentMin;
 	}
 

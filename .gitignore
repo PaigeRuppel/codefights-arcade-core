@@ -3,3 +3,9 @@
 .settings/
 bin/
 .gradle/
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr

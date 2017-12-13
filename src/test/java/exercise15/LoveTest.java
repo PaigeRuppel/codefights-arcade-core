@@ -22,4 +22,28 @@ public class LoveTest {
         boolean loved = false;
         assertTrue(underTest.willYou(young, beautiful, loved));
     }
+
+    @Test
+    public void notYoungAndNotBeautifulButLovedIsTrue() {
+        boolean young = false;
+        boolean beautiful = false;
+        boolean loved = true;
+        assertTrue(underTest.willYou(young, beautiful, loved));
+    }
+
+    @Test
+    public void youngAndBeautifulAndLovedIsFalse() {
+        boolean young = true;
+        boolean beautiful = true;
+        boolean loved = true;
+        assertFalse(underTest.willYou(young, beautiful, loved));
+    }
+
+    @Test
+    public void notYoungAndNotBeautifulAndNotLovedIsFalse() {
+        boolean young = false;
+        boolean beautiful = false;
+        boolean loved = false;
+        assertFalse(underTest.willYou(young, beautiful, loved));
+    }
 }

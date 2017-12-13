@@ -24,4 +24,9 @@ public class TennisGameTest {
     public void tennisSetScore18AndScore25ShouldReturnFalse() {
         assertFalse(underTest.tennisSet(8,5));
     }
+
+    @Test
+    public void tennisSetScore16AndScore25ShouldReturnFalse() {
+        assertFalse(underTest.tennisSet(6,5));
+    }
 }

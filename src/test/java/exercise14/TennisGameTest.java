@@ -29,4 +29,19 @@ public class TennisGameTest {
     public void tennisSetScore16AndScore25ShouldReturnFalse() {
         assertFalse(underTest.tennisSet(6,5));
     }
+
+    @Test
+    public void tennisSetScore17AndScore27ShouldReturnFalse() {
+        assertFalse(underTest.tennisSet(7,7));
+    }
+
+    @Test
+    public void tennisSetScore16AndScore24ShouldReturnTrue() {
+        assertTrue(underTest.tennisSet(6,4));
+    }
+
+    @Test
+    public void tennisSetScore17AndScore25ShouldReturnTrue() {
+        assertTrue(underTest.tennisSet(7,5));
+    }
 }
